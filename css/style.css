@@ -383,6 +383,14 @@ header {
 .sec2_left h2 img {
   width: auto;
 }
+@media (max-width: 1700px) {
+  .sec2_title {
+  height: 350px;
+  }
+  .sec2_left p{
+  display: none;
+}
+}
 .hidden {
   opacity: 0;
 }
@@ -416,6 +424,9 @@ header {
 .sec2 .container.first .sec2_left {
   padding: 36px 54px;
 }
+
+
+
 .sec2_left h2 {
   text-align: right;
   padding-top: 12px;
@@ -473,9 +484,61 @@ header {
   top: 260px;
   right: 736px;
 }
+
+@media (max-width: 1860px) {
+  .gal.galleryshop {
+  top: 260px;
+  right: 682px;
+}
+}
+
+@media (max-width: 1660px) {
+  .gal.galleryshop {
+  top: 260px;
+  right: 490px;
+}
+}
+@media (max-width: 1460px) {
+  .gal.galleryshop {
+  top: 260px;
+  right: 290px;
+}
+}
+@media (max-width: 1260px) {
+  .gal.galleryshop {
+  top: 260px;
+  right: 90px;
+}
+}
 .gal.east {
   bottom: 126px;
   right: 684px;
+}
+
+@media (max-width: 1860px) {
+  .gal.east {
+    bottom: 126px;
+    right: 633px;
+  }
+}
+
+@media (max-width: 1660px) {
+  .gal.east {
+    bottom: 126px;
+    right: 440px;
+  }
+}
+@media (max-width: 1460px) {
+  .gal.east {
+    bottom: 126px;
+    right: 240px;
+  }
+}
+@media (max-width: 1260px) {
+  .gal.east {
+    bottom: 126px;
+    right: 40px;
+  }
 }
 .sparkle {
   position: relative;
