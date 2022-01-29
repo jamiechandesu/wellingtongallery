@@ -3,6 +3,13 @@
   src: url("../fonts/ATypewriterForMe.woff") format("woff"),
     url("../fonts/ATypewriterForMe.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Elephant";
+  src: url("../fonts/ELEPHNT.woff") format("woff"),
+  url("../fonts/ELEPHNT.TTF") format("truetype");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,400&display=swap");
 @import url('http://fonts.cdnfonts.com/css/elephant');
 
@@ -113,6 +120,7 @@ font-style: italic;
   background-color: #ffb600;
   border-radius: 10px;
 }
+
 html {
   overflow-x: hidden;
 }
@@ -171,6 +179,7 @@ header {
   top: 0;
   z-index: 999;
 }
+
 .header .main-nav {
   font-family: "Atype", input-mono, monospace;
   font-size: 40px;
@@ -200,6 +209,7 @@ header {
 .nav_list li {
   margin-bottom: 20px;
 }
+
 .nav_list li a {
   color: #fff;  
 }
@@ -461,97 +471,65 @@ header {
 .robin {
   position: absolute;
   top: 2px;
-  left: 512px;
+   left: 20%;
+}
+@media (max-width: 1300px){
+ .robin{
+   left: 15%;
+ }
+}
+@media (max-width: 1100px){
+ .robin{
+   left: 7%;
+ }
+}
+@media (max-width: 1100px){
+ .robin{
+   display: none;
+ }
 }
 .map {
   width: 100%;
   margin-top: 70px;
 }
 .mapWrap {
-  background: url(../images/map.jpg) no-repeat;
+  background: #ffb600;
   height: 960px;
   width: 100%;
   background-size: cover;
   margin-top: 80px;
   margin-bottom: 240px;
   cursor: url('../images/foot.png'), auto;
+  padding-top: 100.5px;
 }
 .galleries {
   position: relative;
-  width: 100%;
+  width: 970px;
   height: 100%;
+  background: url(../images/mapppp.png) no-repeat;
+  margin: 0 auto;
 }
 .gal {
   position: absolute;
 }
 .gal.choi {
-  top: 228px;
-  left: 558px;
+  top: 147px;
+    left: 50px;
 }
 .gal.west {
-  bottom: 94px;
-  left: 544px;
+    bottom: 72px;
+    left: 30px;
 }
 .gal.galleryshop {
-  top: 260px;
-  right: 736px;
+top: 184px;
+right: 317px;
 }
 
-@media (max-width: 1860px) {
-  .gal.galleryshop {
-  top: 260px;
-  right: 682px;
-}
-}
-
-@media (max-width: 1660px) {
-  .gal.galleryshop {
-  top: 260px;
-  right: 490px;
-}
-}
-@media (max-width: 1460px) {
-  .gal.galleryshop {
-  top: 260px;
-  right: 290px;
-}
-}
-@media (max-width: 1260px) {
-  .gal.galleryshop {
-  top: 260px;
-  right: 90px;
-}
-}
 .gal.east {
-  bottom: 126px;
-  right: 684px;
+     bottom: 110px;
+    right: 268px;
 }
 
-@media (max-width: 1860px) {
-  .gal.east {
-    bottom: 126px;
-    right: 633px;
-  }
-}
-
-@media (max-width: 1660px) {
-  .gal.east {
-    bottom: 126px;
-    right: 440px;
-  }
-}
-@media (max-width: 1460px) {
-  .gal.east {
-    bottom: 126px;
-    right: 240px;
-  }
-}
-@media (max-width: 1260px) {
-  .gal.east {
-    bottom: 126px;
-    right: 40px;
-  }
-}
 .sparkle {
   position: relative;
   top: 50%;
@@ -832,6 +810,16 @@ footer {
   height: 340px;
   margin-top: 220px;
 }
+.interviewBoxtop{
+  width: 100%;
+  display: flex;
+}
+.interviewpic{
+  width: 60%;
+}
+.interviewpic img{
+  width: 100%;
+}
 .artartists > img {
   display: block;
   margin: 0 auto;
@@ -846,15 +834,24 @@ footer {
 }
 .vol9{
   width: 1440px;
-  display: flex;
+  /* display: flex; */
   padding: 60px;
   margin: 0 auto;
   margin-top: 50px;
 }
 .interviewtext{
+  width: calc(40% - 42px);
   margin-left: 42px;
   word-break: break-all;
   position: relative; 
+}
+.interviewtext.it2{
+  width: 100%;
+  margin-left: 0;
+}
+.interviewtext.it2 p{
+  padding-top: 30px;
+  margin-top: 0;
 }
 .volspan {
   color: #fff;
