@@ -51,6 +51,7 @@
             <li><a href="index.html#footer">contact us</a></li>
           </ul>
         </nav>
+               <div class="header-right">
         <div class="search">
           <input type="text" placeholder="" />
           <button>
@@ -68,6 +69,7 @@
             <img src="images/ham.png" alt="menu icon" class="menu-btn" />
             <img src="images/close_icon.png" alt="close icon" class="close-btn">
       </button>
+        </div>
         </div>
       </header>
 
@@ -287,8 +289,28 @@
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
+
+   
+
         // top button
         $(function () {
+             $(window).on("scroll", function () {
+            console.log($(this).scrollTop());
+            if ($(this).scrollTop() >= 100) {
+              $(".chandelier").attr("src", "images/chandelier_on.png");
+              $(".light").attr("src", "images/light_on.png");
+              // $(".chandelier").addClass("chandelier_on")
+            } else {
+              $(".chandelier").attr("src", "images/chandelier.png");
+              $(".light").attr("src", "images/light.png");
+            }
+            if ($(this).scrollTop() >= 2341) {
+              $(".light").attr("src", "images/light.png");
+              $(".chandelier").attr("src", "images/chandelier.png");
+            }
+
+          
+        });
           // back to top
           $("#scrolltop").click(function () {
             $("html, body").animate({ scrollTop: "0" }, 500);
@@ -312,22 +334,7 @@
             headerEl.classList.toggle("nav-open");
           });
 
-          // flicking lights on and off
-
-          $(window).on("scroll", function () {
-            console.log($(this).scrollTop());
-            if ($(this).scrollTop() >= 420) {
-              $(".chandelier").attr("src", "images/chandelier_on.png");
-              $(".light").attr("src", "images/light_on.png");
-              // $(".chandelier").addClass("chandelier_on")
-            } else {
-              $(".chandelier").attr("src", "images/chandelier.png");
-              $(".light").attr("src", "images/light.png");
-            }
-            if ($(this).scrollTop() >= 3190) {
-              $(".light").attr("src", "images/light.png");
-              $(".chandelier").attr("src", "images/chandelier.png");
-            }
+      
 
             //Scroll event
             $(window).scroll(function () {
@@ -336,9 +343,12 @@
               if (scrolled < 200) $("#scrolltop").fadeOut("slow");
             });
           });
-          // aos initialisation
+
+           // flicking lights on and off
+
+       
+        // aos initialisation
           AOS.init();
-        });
       });
     </script>
   </body>

@@ -248,10 +248,19 @@ header {
   display: none;
 }
 
-.search {
+
+.header-right{
   display: flex;
+  align-items: center;
+}
+.header-right div{
+  display: inline-block;
+  margin: 0 10px;
+}
+.search {
   margin-left: 65rem;
 }
+
 .search input {
   border: none;
   height: 40px;
@@ -265,7 +274,6 @@ header {
 .search button {
   display: inline-block;
   vertical-align: top;
-  padding-left: 5px;
   border: none;
   cursor: pointer;
   background: none;
@@ -275,6 +283,7 @@ header {
   background: none;
   border: none;
 }
+
 /* slick1 */
 .center.slick-slider {
   margin-top: 48px;
@@ -820,6 +829,10 @@ footer {
 .interviewpic img{
   width: 100%;
 }
+
+.artartists {
+  margin-top: 268px;
+}
 .artartists > img {
   display: block;
   margin: 0 auto;
@@ -909,3 +922,4 @@ footer {
 .gallery-item{
   overflow: hidden;
 }
+
