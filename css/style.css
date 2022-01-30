@@ -769,6 +769,22 @@ footer {
   font-family: "Atype", input-mono, monospace;
   padding: 46px 126px;
 }
+@media (max-width: 1440px) {
+  footer {
+    padding: 46px 60px;
+  }
+}
+@media (max-width: 1288px) {
+  footer .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 896px) {
+  footer .grid-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -787,6 +803,11 @@ footer {
   border: none;
   padding: 8px;
   margin-bottom: 10px;
+}
+@media (max-width: 896px) {
+  footer .mailing_input {
+    display: inline-block;
+  }
 }
 .mailing_input:focus {
   outline: 1.5px dashed #333333;
